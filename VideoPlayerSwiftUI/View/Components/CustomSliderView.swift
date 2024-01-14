@@ -5,6 +5,7 @@
 //  Created by Anthony Odu on 14/01/2024.
 //
 
+import Foundation
 import SwiftUI
 import Combine
 
@@ -52,4 +53,3 @@ class PlayerSliderViewModel: ObservableObject {
         }
     }
 }
-
