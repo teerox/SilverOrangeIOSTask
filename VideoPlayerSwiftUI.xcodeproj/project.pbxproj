@@ -13,6 +13,9 @@
 		3AF67A6325A64DBF00D360A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF67A6225A64DBF00D360A7 /* Preview Assets.xcassets */; };
 		3AF67A6E25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A6D25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift */; };
 		3AF67A7925A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */; };
+		63FCBC652B54609F00E304F2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBC642B54609F00E304F2 /* NetworkManager.swift */; };
+		63FCBC682B5460DC00E304F2 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBC672B5460DC00E304F2 /* Repository.swift */; };
+		63FCBC6C2B54611A00E304F2 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBC6B2B54611A00E304F2 /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		3AF67A7425A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerSwiftUIUITests.swift; sourceTree = "<group>"; };
 		3AF67A7A25A64DBF00D360A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FCBC642B54609F00E304F2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		63FCBC672B5460DC00E304F2 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		63FCBC6B2B54611A00E304F2 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 		3AF67A5A25A64DBD00D360A7 /* VideoPlayerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				63FCBC6A2B54610A00E304F2 /* Model */,
+				63FCBC662B5460C400E304F2 /* Repository */,
+				63FCBC632B54608500E304F2 /* NetworkModel */,
 				3AF67A5B25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift */,
 				3AF67A5D25A64DBD00D360A7 /* ContentView.swift */,
 				3AF67A5F25A64DBF00D360A7 /* Assets.xcassets */,
@@ -128,6 +137,30 @@
 				3AF67A7A25A64DBF00D360A7 /* Info.plist */,
 			);
 			path = VideoPlayerSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		63FCBC632B54608500E304F2 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				63FCBC642B54609F00E304F2 /* NetworkManager.swift */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		63FCBC662B5460C400E304F2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				63FCBC672B5460DC00E304F2 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		63FCBC6A2B54610A00E304F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63FCBC6B2B54611A00E304F2 /* VideoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FCBC652B54609F00E304F2 /* NetworkManager.swift in Sources */,
 				3AF67A5E25A64DBD00D360A7 /* ContentView.swift in Sources */,
 				3AF67A5C25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift in Sources */,
+				63FCBC6C2B54611A00E304F2 /* VideoModel.swift in Sources */,
+				63FCBC682B5460DC00E304F2 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
