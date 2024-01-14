@@ -38,7 +38,7 @@ final class ViewModel: ObservableObject {
     @Published var playerPaused = true
     
     var buttonToDisplay: String {
-        return playerPaused ? "play.circle.fill" : "pause.circle.fill"
+        return playerPaused ? "play" : "pause"
     }
     
     init(with repository: RequestProtocol = Repository(),
@@ -49,7 +49,7 @@ final class ViewModel: ObservableObject {
     }
     
     /// - This method makes fetches data from the end point.
-    /// - Author: Anthony Odu 13/01/2024
+    /// - Author: Anthony Odu 14/01/2024
     func fetchData() {
         showLoader = true
         dataLoadedSuccessfully = false
@@ -68,7 +68,7 @@ final class ViewModel: ObservableObject {
     
     /// - This method makes is used to sort the api response by date
     /// - Returns: returns sorted Array of VideoModel result
-    /// - Author: Anthony Odu 13/01/2024
+    /// - Author: Anthony Odu 14/01/2024
     func sortByDate() -> [VideoModel] {
           let dateFormatter = DateFormatter()
           dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -85,7 +85,7 @@ final class ViewModel: ObservableObject {
 
     
     /// Move to the next item in the list and update the UI.
-    /// - Author: Anthony Odu 13/01/2024
+    /// - Author: Anthony Odu 14/01/2024
     func showNextItem() {
         guard !result.isEmpty else {
             return // Ensure the result array is not empty
@@ -96,7 +96,7 @@ final class ViewModel: ObservableObject {
     }
 
     /// Move to the previous item in the list and update the UI.
-    /// - Author: Anthony Odu 13/01/2024
+    /// - Author: Anthony Odu 14/01/2024
     func showPreviousItem() {
         guard !result.isEmpty else {
             return // Ensure the result array is not empty
@@ -111,7 +111,7 @@ final class ViewModel: ObservableObject {
     /// - Parameters:
     ///   - markdownString: mark down string used by the method
     /// - Returns: returns NSAttributedString
-    /// - Author: Anthony Odu 13/01/2024
+    /// - Author: Anthony Odu 14/01/2024
     func parseString(markdownString: String) -> NSAttributedString {
         let attributtedString : NSAttributedString = markdownParser.parse(markdownString)
            return attributtedString

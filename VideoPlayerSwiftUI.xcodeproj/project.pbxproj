@@ -24,6 +24,7 @@
 		63FCBC782B546BDC00E304F2 /* TextWithAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBC772B546BDC00E304F2 /* TextWithAttributedString.swift */; };
 		63FCBC7C2B546E1200E304F2 /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBC7B2B546E1200E304F2 /* CustomSliderView.swift */; };
 		63FCBC7E2B546E9F00E304F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBC7D2B546E9F00E304F2 /* ViewModel.swift */; };
+		63FCBC802B54714D00E304F2 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCBC7F2B54714D00E304F2 /* VideoPlayerView.swift */; };
 		9374A60CA9CC0D323DB1968A /* Pods_VideoPlayerSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0FE4CA5967C235375A0F71 /* Pods_VideoPlayerSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		63FCBC772B546BDC00E304F2 /* TextWithAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithAttributedString.swift; sourceTree = "<group>"; };
 		63FCBC7B2B546E1200E304F2 /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
 		63FCBC7D2B546E9F00E304F2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		63FCBC7F2B54714D00E304F2 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		7DDBA69D95ACC8FB80914849 /* Pods-VideoPlayerSwiftUI-VideoPlayerSwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayerSwiftUI-VideoPlayerSwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-VideoPlayerSwiftUI-VideoPlayerSwiftUIUITests/Pods-VideoPlayerSwiftUI-VideoPlayerSwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E10713CB7EA67F1436A4583 /* Pods_VideoPlayerSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoPlayerSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98963738E9372C67BAB7E9EC /* Pods-VideoPlayerSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayerSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-VideoPlayerSwiftUITests/Pods-VideoPlayerSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			children = (
 				63FCBC742B546BAF00E304F2 /* Components */,
 				63FCBC7D2B546E9F00E304F2 /* ViewModel.swift */,
+				63FCBC7F2B54714D00E304F2 /* VideoPlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				63FCBC6F2B54689C00E304F2 /* MarkdownSubreddit.swift in Sources */,
 				63FCBC6C2B54611A00E304F2 /* VideoModel.swift in Sources */,
 				63FCBC682B5460DC00E304F2 /* Repository.swift in Sources */,
+				63FCBC802B54714D00E304F2 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

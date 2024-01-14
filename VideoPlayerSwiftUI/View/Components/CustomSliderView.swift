@@ -11,15 +11,20 @@ import Combine
 
 struct CustomSliderView: View {
     @ObservedObject var viewModel: PlayerSliderViewModel
+    @Binding var progres: Float
     
-    init(player: MediaPlayer) {
+    init(player: MediaPlayer, progres: Binding<Float>) {
         viewModel = .init(player: player)
+        self._progres = progres
     }
     
     var body: some View {
         Slider(value: $viewModel.progressValue) { didChange in
             viewModel.didSliderChanged(didChange)
         }
+        .onChange(of: viewModel.progressValue, perform: { value in
+            progres = value
+        })
     }
 }
 
@@ -40,6 +45,7 @@ class PlayerSliderViewModel: ObservableObject {
             guard let self = self,
                   self.acceptProgressUpdates else { return }
             self.progressValue = progress
+                
         }.store(in: &subscriptions)
     }
     
