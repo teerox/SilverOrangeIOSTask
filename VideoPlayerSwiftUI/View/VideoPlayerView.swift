@@ -145,7 +145,7 @@ struct VideoPlayerView: View {
                         VStack(alignment: .leading) {
                             Text(title)
                                 .font(.title3)
-                            Text(title)
+                            Text(author)
                                 .font(.callout)
                             TextWithAttributedString(attributedText: viewModel.parseString(markdownString: markdownString))
                                 .layoutPriority(1)
@@ -171,6 +171,7 @@ struct VideoPlayerView: View {
                 }
                 markdownString = viewModel.result[viewModel.currentIndex].description
                 title = viewModel.result[viewModel.currentIndex].title
+                author = viewModel.result[viewModel.currentIndex].author.name
             }
             
             .onChange(of: viewModel.dataLoadedSuccessfully) { loaded in
@@ -185,6 +186,7 @@ struct VideoPlayerView: View {
                     }
                     markdownString = viewModel.result.first?.description ?? ""
                     title = viewModel.result.first?.title ?? ""
+                    author = viewModel.result.first?.author.name ?? ""
                 }
             }
             .onChange(of: progres, perform: { value in
