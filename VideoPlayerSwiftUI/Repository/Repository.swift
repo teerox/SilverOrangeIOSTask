@@ -22,12 +22,13 @@ class Repository: RequestProtocol {
     /// - Parameters: For Testing Purpose mocked `networkManger`
     /// can be injected into this viewModel
     ///   - networkManger: Fetch result from Api
+    /// - Author: Anthony Odu 14/01/2024
     init(with networkManger: ServiceProtocol = NetworkManager.shared()) {
         self.networkManger = networkManger
     }
     
     /// - Returns: returns AnyPublisher for video data
-    /// - Author: Anthony Odu 13/01/2024
+    /// - Author: Anthony Odu 14/01/2024
     func fetchAllData() -> AnyPublisher<[VideoModel], Error> {
         let result: AnyPublisher<[VideoModel], Error> = networkManger.makeRequest(url: "/videos",method: .get)
         
